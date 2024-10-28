@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL]()
-- [Live Site URL]()
+- [Solution URL](https://www.frontendmentor.io/solutions/frontend-quiz-app-hkatuOoraO)
+- [Live Site URL](https://fem-frontend-quiz-app.netlify.app/)
 
 ## My process
 
