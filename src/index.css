@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400 500;
+    font-display: swap;
+    src: url("/assets/fonts/Rubik-VariableFont_wght.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Rubik";
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url("/assets/fonts/Rubik-Italic-VariableFont_wght.ttf")
+      format("truetype");
+  }
+
+  :root {
+    /* raw color accessors */
+    --light-purple: 278 100% 95%;
+    --purple: 277 91% 56%;
+    --pure-white: 0 0% 100%;
+    --dark-navy: 216 25% 25%;
+    --grey-navy: 219 13% 44%;
+    --light-grey: 220 37% 97%;
+    --navy: 215 27% 32%;
+    --ligh-bluish: 216 47% 78%;
+    --green: 151 70% 50%;
+    --red: 0 82% 63%;
+
+    /* semantic tokens */
+    --danger: var(--red);
+    --success: var(--green);
+    --brand: var(--purple);
+
+    --color-bg-neutral: var(--pure-white);
+    --color-bg-brand: var(--brand);
+    --color-bg-idle: var(--pure-white);
+    --color-bg-subtle: var(--light-grey);
+    --color-bg-btn-idle: var(--brand);
+    --color-bg-success: var(--success);
+    --color-bg-danger: var(--danger);
+    --color-bg-brand-hovered: var(--light-purple);
+
+    --color-icon-success: var(--success);
+    --color-icon-danger: var(--danger);
+
+    --color-toggle-icon: var(--pure-white);
+
+    --color-border-brand: var(--brand);
+    --color-border-success: var(--success);
+    --color-border-danger: var(--danger);
+    --color-border-inverse: var(--pure-white);
+
+    --color-text-neutral: var(--dark-navy);
+    --color-text-subtle: var(--grey-navy);
+    --color-text-subtlest: var(--grey-navy);
+
+    --color-text-inverse: var(--pure-white);
+    --color-text-brand: var(--brand);
+    --color-text-danger: var(--danger);
+
+    --pattern-bg-mobile: url("/assets/images/pattern-background-mobile-light.svg");
+    --pattern-bg-tablet: url("/assets/images/pattern-background-tablet-light.svg");
+    --pattern-bg-desktop: url("/assets/images/pattern-background-desktop-light.svg");
+  }
+
+  .dark {
+    --color-bg-neutral: var(--dark-navy);
+    --color-text-subtlest: var(--ligh-bluish);
+    --color-bg-idle: var(--navy);
+    --color-text-neutral: var(--pure-white);
+
+    --color-text-neutral: var(--pure-white);
+
+    --pattern-bg-mobile: url("/assets/images/pattern-background-mobile-dark.svg");
+    --pattern-bg-tablet: url("/assets/images/pattern-background-tablet-dark.svg");
+    --pattern-bg-desktop: url("/assets/images/pattern-background-desktop-dark.svg");
+  }
+
+  html {
+    font-family: "Rubik", sans-serif;
+  }
+}
