@@ -1,4 +1,4 @@
-import { useThemeContext } from "../themeContext.jsx";
+import { useThemeContext } from "../ThemeContext.jsx";
 
 function Navbar({ quiz }) {
   const { theme, handleToggleDarkMode } = useThemeContext();
